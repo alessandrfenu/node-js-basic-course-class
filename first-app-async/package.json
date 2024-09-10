@@ -18,6 +18,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "git": "^0.1.5",
     "lodash": "^4.17.21",
     "nodemon": "^2.0.16"
   }
