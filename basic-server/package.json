@@ -2,7 +2,7 @@
   "name": "fastify-web-server",
   "version": "1.0.0",
   "description": "Repo containing a simple node.js with Fastify",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js"
