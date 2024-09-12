@@ -1,0 +1,44 @@
+### GET
+GET http://localhost:3000  HTTP/1.1
+
+### GET current time
+GET http://localhost:3000/healthCheck HTTP/1.1
+
+### GET books
+GET http://localhost:3000/books?author=Miguel de Cervantes&published_year=1605 HTTP/1.1
+
+### GET books
+GET http://localhost:3000/books?published_year=1967&from=58 HTTP/1.1
+### GET books
+GET http://localhost:3000/books?author=Pippo HTTP/1.1
+
+### DELETE book
+DELETE http://localhost:3000/books/51 HTTP/1.1
+
+### PUT book
+PUT http://localhost:3000/books?title=pippo&author=plugo&isbn=100&published_year=2024&id=70 HTTP/1.1
+### POST book
+PUT http://localhost:3000/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "New Book",
+    "author": "John Doe",
+    "isbn": "1234567890",
+    "published_year": 2022
+}
+
+### POST book
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+{
+    "title": "New Book 2 ",
+    "author": "John Doeaqaa",
+    "isbn": "1234567890",
+    "published_year": 2022
+}
+
+### GET
+GET http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJwaXBwbyIsInJvbGUiOiJhZG1pbiIsImFjdGlvbnMiOlsicmVhZCIsIndyaXRlIiwiZGVsZXRlIl0sImlhdCI6MTcyNjEzNDc2OSwiZXhwIjoxNzI2NDk0NzY5fQ.l4FMR5PzCYKc4p_c8RxV_IuHmP3EgWAJ_J5H5OLlryE
